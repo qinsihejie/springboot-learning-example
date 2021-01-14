@@ -1,5 +1,9 @@
 package org.spring.springboot.domain;
 
+
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 
 /**
@@ -7,6 +11,8 @@ import java.io.Serializable;
  *
  * Created by bysocket on 07/02/2017.
  */
+@Getter
+@Setter
 public class City implements Serializable {
 
     private static final long serialVersionUID = -1L;
@@ -30,38 +36,6 @@ public class City implements Serializable {
      * 描述
      */
     private String description;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getProvinceId() {
-        return provinceId;
-    }
-
-    public void setProvinceId(Long provinceId) {
-        this.provinceId = provinceId;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     @Override
     public String toString() {
