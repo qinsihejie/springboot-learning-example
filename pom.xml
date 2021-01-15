@@ -83,5 +83,6 @@
     <module>springboot-webflux-5-thymeleaf-mongodb</module>
 		<module>springboot-webflux-6-redis</module>
 		<module>springboot-webflux-7-redis-cache</module>
+		<module>springboot-common</module>
 	</modules>
 </project>
